@@ -11,8 +11,73 @@
       font-family: 'Sono', sans-serif;
     }
 
+    .pricing-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      gap: 2rem;
+     
+      
+      
+    }
+
+    .plan-title{
+      font-weight: 600;
+      text-align: center; 
+      margin-bottom: 10px;
+    
+   
+    }
+
+    .plan-price{
+      text-align: center;
+      font-weight: bolder;
+      font-size: xx-large;
+      margin-bottom: 10px;
+
+    }
+
+  
+
+    .pricing-plan{
+      flex: 1;
+      background-color: #f2f2f2;
+      padding: 1rem;
+      border-radius: 5px;
+      text-align: center;
+   
+    }
+
+    .plan-button{
+      justify-content: center;
+      background-color: orange;
+    }
+
+    .plan-features{
+      padding: 0;
+      margin: 0;
+    list-style: none;
+    }
+
+    .plan-features li {
+      margin-bottom: 1rem;
+    }
+
+    .plan-button{
+      padding: 10px;
+      color: #f2f2f2;
+      border-radius: 1rem;
+      border: none;
+
+    }
+
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
+      .pricing-container {
+        flex-direction: column;
+        height: 100%;
+      }
       
     }
   </style>
