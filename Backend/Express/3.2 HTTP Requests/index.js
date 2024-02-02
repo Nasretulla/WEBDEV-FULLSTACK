@@ -1,20 +1,19 @@
 import express from "express";
-const app = express();
 
+const app = express();
 const port = 3000;
 
-app.get("/", (request, response) => {
-  response.send("<h1>Homepage</h1>");
+app.get("/", (req, resp) => {
+  resp.send("Hello Maailma!");
 });
 
-app.get("/about", (request, response) => {
-  response.send("<h1>About Me</h1><p>My name is Nasretulla</p>");
+app.get("/about", (req, resp) => {
+  resp.send("<h1>About me</h1>");
 });
 
-app.get("/contact", (request, response) => {
-  response.send("<h1>Contact</h1> <p>My email is: someone@google.com</p>");
+app.get("/contact", (req, resp) => {
+  resp.send("<h1>Contact me</h1>");
 });
-
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+  console.log(`Server is running on port ${port}`);
 });

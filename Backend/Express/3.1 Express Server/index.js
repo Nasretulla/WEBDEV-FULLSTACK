@@ -2,10 +2,10 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-app.get("/", (request, response) => {
-  response.send("Hello from other side!");
+app.get("/", (req, resp) => {
+  resp.send(console.log("Hello world!"));
 });
 
 app.listen(port, () => {
-  console.log(`Server running on port ${port}.`);
+  console.log(`Server running on port ${port}`);
 });
